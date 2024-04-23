@@ -124,7 +124,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  justify-content: flex-start;
+  align-items:flex-start ;
 }
 
 .hero_container .left_container .top_content {
@@ -150,7 +150,16 @@
   font-weight: 300;
   line-height: 161.1%;
 }
-
+.hero_container .left_container .bottom_content{
+  position: relative;
+}
+.hero_container .left_container .bottom_content img{
+  position: absolute;
+  width: 91px;
+  object-fit: contain;
+  right: -110px;
+  bottom: 26px;
+}
 .hero_container .left_container .bottom_content button {
   padding-top: 11px;
   padding-bottom: 12px;
@@ -925,6 +934,11 @@ footer {
 
 
 @media only screen and (max-width: 1200px) {
+  .hero_container .left_container .bottom_content img {
+    width: 64px;
+    right: -86px;
+    bottom: 6px;
+}
   .nav_container .logo img {
     width: 160px;
   }

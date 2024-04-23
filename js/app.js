@@ -1,4 +1,14 @@
 $(document).ready(function () {
+  $("#menu-btn").click(function () {
+    $(".mobile-nav").addClass("active");
+  });
+
+  $("#close-btn").click(function () {
+    $(".mobile-nav").removeClass("active");
+  });
+});
+
+window.addEventListener("load", (event) => {
   function start_hero_discount_slider() {
     $("#hero_discount_slider_id").slick({
       slidesToShow: 4,
@@ -148,12 +158,4 @@ $(document).ready(function () {
   }
 
   start_trending_stores_slider();
-
-  $("#menu-btn").click(function () {
-    $(".mobile-nav").addClass("active");
-  });
-
-  $("#close-btn").click(function () {
-    $(".mobile-nav").removeClass("active");
-  });
 });
